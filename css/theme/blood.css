@@ -10,11 +10,21 @@
  *
  */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+h2 {
+  background-image: linear-gradient(45deg, #2e90d2 0, #00c0c8 47%, #4baca4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+body {
+  letter-spacing: 1px; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222;
+  background: #161d37;
+  background: radial-gradient(ellipse at center, #161d37 0, #1c132a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#161d37', endColorstr='#1c132a', GradientType=1);
   background-color: #222; }
 
 .reveal {

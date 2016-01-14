@@ -4,6 +4,14 @@
  *
  * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
  */
+h2 {
+  background-image: linear-gradient(45deg, #2e90d2 0, #00c0c8 47%, #4baca4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+body {
+  letter-spacing: 1px; }
+
 .reveal a {
   line-height: 1.3em; }
 
@@ -11,12 +19,14 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #F0F1EB;
+  background: #161d37;
+  background: radial-gradient(ellipse at center, #161d37 0, #1c132a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#161d37', endColorstr='#1c132a', GradientType=1);
   background-color: #F0F1EB; }
 
 .reveal {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: normal;
   color: #000; }
 

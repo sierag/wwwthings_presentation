@@ -4,6 +4,14 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+h2 {
+  background-image: linear-gradient(45deg, #2e90d2 0, #00c0c8 47%, #4baca4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+body {
+  letter-spacing: 1px; }
+
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
@@ -11,7 +19,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
+  background: #161d37;
+  background: radial-gradient(ellipse at center, #161d37 0, #1c132a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#161d37', endColorstr='#1c132a', GradientType=1);
   background-color: #fff; }
 
 .reveal {

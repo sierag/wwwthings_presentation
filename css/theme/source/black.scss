@@ -3,17 +3,12 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
-
-
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-
+@import url(https://fonts.googleapis.com/css?family=Megrim|Teko:500|Lekton);
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #222;
@@ -22,15 +17,14 @@ $mainColor: #fff;
 $headingColor: #fff;
 
 $mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Lekton', Helvetica, sans-serif;
+$headingFont: 'Teko', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
+$headingFontWeight: 500;
 $linkColor: #42affa;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: lighten( $linkColor, 25% );
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -38,12 +32,47 @@ $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
 section.has-light-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #222;
-	}
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #222;
+  }
 }
 
+h3 {
+  font-family: 'Megrim', sans-serif !important;
+  background-image: linear-gradient(45deg, #2e90d2 0, #00c0c8 47%, #4baca4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  line-height: 32px;
+  font-family: Megrim, cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .63);
+}
 
+h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .63) !important;
+}
+
+.logo {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 50%;
+}
+
+.hljs {
+  background: none !important;
+
+}
+
+.reveal pre {
+  box-shadow: none !important;
+}
+
+.reveal ol, .reveal dl, .reveal ul {
+  margin:0px !important;
+}
+
+// radial-gradient(ellipse at center,#161d37 0,#1c132a 100%)
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

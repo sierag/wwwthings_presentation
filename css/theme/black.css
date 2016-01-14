@@ -3,19 +3,57 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Megrim|Teko:500|Lekton);
+h2 {
+  background-image: linear-gradient(45deg, #2e90d2 0, #00c0c8 47%, #4baca4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+body {
+  letter-spacing: 1px; }
+
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
+
+h3 {
+  font-family: 'Megrim', sans-serif !important;
+  background-image: linear-gradient(45deg, #2e90d2 0, #00c0c8 47%, #4baca4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  line-height: 32px;
+  font-family: Megrim, cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63); }
+
+h1 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.63) !important; }
+
+.logo {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 50%; }
+
+.hljs {
+  background: none !important; }
+
+.reveal pre {
+  box-shadow: none !important; }
+
+.reveal ol, .reveal dl, .reveal ul {
+  margin: 0px !important; }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #222;
+  background: #161d37;
+  background: radial-gradient(ellipse at center, #161d37 0, #1c132a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#161d37', endColorstr='#1c132a', GradientType=1);
   background-color: #222; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Lekton", Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
   color: #fff; }
@@ -41,8 +79,8 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fff;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "Teko", Helvetica, sans-serif;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
